@@ -355,6 +355,53 @@
 		margin: 0;
 		}	
 
+/*HERES THE EXTRA INFO*/
+
+		#craft {
+		width: 100%;
+		height: 90vh;
+		background-image: url("factory.jpeg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		}
+
+		.craft-overlay {
+		position: absolute;
+		inset: 0;
+
+		background: linear-gradient(
+		to bottom,
+		rgba(242,242,242,0) 65%,
+		rgba(242,242,242,0.75) 100%
+		);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-end;
+		text-align: right;
+		color: #111;
+		padding: 0 90px 40px 0;
+		box-sizing: border-box;
+		}
+
+		.craft-overlay h2 {
+		font-size: 32px;
+		font-weight: 700;
+		margin: 0 0 8px;
+		color: #0050b8;
+		}
+
+		.craft-overlay p {
+		font-size: 18px;
+		margin: 0;
+		color: #555;
+		}
+
 /*REVIEW STARTS HERE*/
 		.reviews {
 		background: #f2f2f2;
@@ -788,6 +835,13 @@
 			<h2>03 Surface</h2>
 			<p>Soft-touch finish adds grip without making the object feel harsh.</p>
 		</div>
+	</div>
+	</section>
+
+	<section id="craft">
+	<div class="craft-overlay">
+		<h2>Made by hand.</h2>
+		<p>Built for yours.</p>
 	</div>
 	</section>
 
